@@ -1,0 +1,69 @@
+/* --- 768px --- */
+@media screen and (min-width: 768px) {
+  .base-apparel-logo {
+    padding: 5%;
+  }
+
+  /*  <!-- Main -->  */
+
+  .main {
+    padding: 5% 20% 0 20%;
+    line-height: 1rem;
+  }
+
+  .main-heading {
+    line-height: 4rem;
+  }
+}
+
+/* --- 1024px --- */
+@media screen and (min-width: 1024px) {
+  .card-component {
+    padding: 3%;
+    max-height: 600px;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+  /*  <!-- Heading --> */
+
+  .heading {
+    min-width: 40%;
+    background: url("./images/hero-desktop.jpg") no-repeat;
+    box-shadow: 6px 0 20px hsl(0, 36%, 70%);
+    background-size: cover;
+  }
+
+  .base-apparel-logo {
+    height: 3.5rem;
+  }
+
+  .female-model-image {
+    display: none;
+  }
+
+  /*  <!-- Main -->  */
+
+  .main {
+    padding: 5% 5% 5% 5%;
+    text-align: initial;
+    box-shadow: 0 0 20px hsl(0, 36%, 70%);
+    background: url("./images/bg-pattern-desktop.svg");
+    background-position: center;
+  }
+
+  .main-heading {
+    margin-bottom: 1rem;
+  }
+}
+
+/* --- 1201px --- */
+@media screen and (min-width: 1201px) {
+  .heading {
+    min-width: 30%;
+  }
+
+  .main {
+    max-width: 34rem;
+  }
+}
