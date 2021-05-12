@@ -1,1 +1,1 @@
-Simple Base Apparel Landing Page
+Simple Apparel Commerce Landing Page
