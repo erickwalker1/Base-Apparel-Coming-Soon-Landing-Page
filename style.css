@@ -84,3 +84,20 @@ input:focus {
   border-radius: 20px;
   background-color: hsl(0, 47%, 76%);
 }
+
+.error-container {
+  display: none;
+  margin-top: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.error-image {
+  margin: 0 0.5rem;
+}
+
+.error-message {
+  color: red;
+  font-size: small;
+  margin-top: 0.25rem;
+}

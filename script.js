@@ -1,16 +1,15 @@
 const button = document.querySelector(".button");
-const inputBox = document.querySelector(".input");
+const emailInput = document.querySelector(".input");
+const errorMessage = document.querySelector(".error-container");
 
 button.addEventListener("click", function (event) {
-  event.preventDefault();
-  checkForValidEmail();
-});
+  // JS Email Regex
+  const mailformat =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-function checkForValidEmail() {
-  if (inputBox.value.includes("@")) {
-    window.sessionStorage.setItem("key", inputBox.value);
-    document.getElementById("input-form").reset();
-  } else {
-    alert("Please Provide A Valid Email");
+  if (!mailformat.test(emailInput.value.trim())) {
+    event.preventDefault();
+    errorMessage.style.display = "flex";
+    emailInput.style.borderBottom = "1px solid red";
   }
-}
+});
